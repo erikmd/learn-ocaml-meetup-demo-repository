@@ -1,0 +1,9 @@
+[
+    [
+	"ocaml_editor",
+	{
+	    "title": "OCaml Editor",
+	    "short_description": "Editeur et Toplevel OCaml générique (indépendant des exercices de TP)"
+	}
+    ]
+]

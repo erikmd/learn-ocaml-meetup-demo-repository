@@ -1,0 +1,7 @@
+{ "learnocaml_version": "1",
+  "groups":
+  { "demo":
+    { "title": "Demo Learn-OCaml",
+      "exercises": [ "exo-defs", "exo-year" ] }
+  }
+}

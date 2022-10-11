@@ -1,0 +1,8 @@
+{
+  "learnocaml_version": "2",
+  "kind": "exercise",
+  "short_description": "Exercice extrait du MOOC OCaml",
+  "stars": 1,
+  "title": "Exercice sur les définitions globales et locales",
+  "focus": [ "global and local definitions" ]
+}

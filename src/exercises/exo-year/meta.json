@@ -1,0 +1,8 @@
+{
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "short_description": "Exercice extrait du TP ILU-1 de l'UT3",
+    "stars": 1,
+    "title": "Exercice sur le filtrage d'entiers",
+    "focus": [ "pattern matching" ]
+}

@@ -7,8 +7,11 @@ let q_nbjour =
   test_function_against_solution
     (* no random cases: *)
     ~gen:0
-    (* all exn are seen alike: *)
-    ~test:(test_eq_exn (fun _ _ -> true))
+    (* all (failwith "_", invalid_arg "_") exn are accepted: *)
+    ~test:(test_eq_exn (fun ea _ ->
+               match ea with
+               | Failure _ | Invalid_argument _ -> true
+               | _ -> false))
     (* function type: *)
     [%funty: int -> int -> int]
     (* function name: *)

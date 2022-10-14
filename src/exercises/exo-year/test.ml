@@ -16,10 +16,14 @@ let q_nbjour =
     [%funty: int -> int -> int]
     (* function name: *)
     "nbjour"
-    (* the syntax "@:!!" is explained in test_lib.mli *)
     (List.map (fun m -> m @:!! 2012) mois
      @ List.map (fun y -> 2 @:!! y) ans
      @ List.map (fun m -> m @:!! 2020) [0; 13])
+    (* the syntax "@: !!" is explained in:
+       https://github.com/ocaml-sf/learn-ocaml/blob/v0.14.0/src/ppx-metaquot/fun_ty.mli#L22-L28
+       see also:
+       https://github.com/ocaml-sf/learn-ocaml/blob/v0.14.0/src/grader/test_lib.mli
+     *)
 
 let () =
   set_result @@

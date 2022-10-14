@@ -19,25 +19,48 @@ In the running server, only the exercises that are indexed in
 
 ## How to run a server locally (using a static binary from a release)
 
+* Clone this repo (`git clone https://github.com/erikmd/learn-ocaml-meetup-demo-repository.git`)
 * Open a terminal in this folder (`cd .../learn-ocaml-meetup-demo-repository/`)
 * Run the commands below to:
   * Get the `learn-ocaml` binary from the [latest release](https://github.com/ocaml-sf/learn-ocaml/releases).
   * Get the `learn-ocaml-www.zip` archive, and unpack it.
   * Run the server.
-* Copy the teacher token that is generated (`X-...-...-...-...`)
-* Open <http://localhost:8080/> then login using your token.
-* Open the `Exercises` view.
-* Type <kbd>Ctrl + C</kbd> to stop the server. 
+
+### GNU/Linux:
 
 ```bash
 mkdir server && cd server
-curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-linux-x86_64  # for example
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-linux-x86_64
 curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-www.zip
 unzip learn-ocaml-www.zip
 mv learn-ocaml{-linux-x86_64,}
 chmod a+x learn-ocaml
 ./learn-ocaml --contents-dir=learn-ocaml-www --repo=../src
 ```
+
+then two folders `www` and `sync` are created.
+
+### macOS:
+
+```bash
+mkdir server && cd server
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-darwin-x86_64
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-www.zip
+unzip learn-ocaml-www.zip
+mv learn-ocaml{-darwin-x86_64,}
+chmod a+x learn-ocaml
+xattr -d com.apple.quarantine learn-ocaml
+./learn-ocaml --contents-dir=learn-ocaml-www --repo=../src
+```
+
+then two folders `www` and `sync` are created.
+
+### Finally:
+
+* Copy the teacher token that is generated and shown in the logs (`X-...-...-...-...`)
+* Open <http://localhost:8080/> then login using your token.
+* Open the `Exercises` view.
+* If need be, type <kbd>Ctrl + C</kbd> to stop the server.
 
 ## How to deploy a static server using GitHub Pages
 

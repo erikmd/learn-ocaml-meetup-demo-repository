@@ -15,7 +15,9 @@ In the running server, only the exercises that are indexed in
 * Copy the teacher token that is generated (`X-...-...-...-...`)
 * Open <http://localhost:8080/> then login using your token.
 * Open the `Exercises` view.
-* Type <kbd>Ctrl + C</kbd> to stop the server.
+* To stop the server:
+  * type <kbd>Ctrl + C</kbd> from the initial terminal,
+  * or run `docker stop learn-ocaml-server` from another terminal.
 
 ## How to run a server locally (using a static binary from a release)
 

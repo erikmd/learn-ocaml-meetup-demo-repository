@@ -32,8 +32,8 @@ In the running server, only the exercises that are indexed in
 
 ```bash
 mkdir server && cd server
-curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-linux-x86_64
-curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-www.zip
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.15.0/learn-ocaml-linux-x86_64
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.15.0/learn-ocaml-www.zip
 unzip learn-ocaml-www.zip
 mv learn-ocaml{-linux-x86_64,}
 chmod a+x learn-ocaml
@@ -46,8 +46,8 @@ then two folders `www` and `sync` are created.
 
 ```bash
 mkdir server && cd server
-curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-darwin-x86_64
-curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.14.0/learn-ocaml-www.zip
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.15.0/learn-ocaml-darwin-x86_64
+curl -fSOL https://github.com/ocaml-sf/learn-ocaml/releases/download/v0.15.0/learn-ocaml-www.zip
 unzip learn-ocaml-www.zip
 mv learn-ocaml{-darwin-x86_64,}
 chmod a+x learn-ocaml
